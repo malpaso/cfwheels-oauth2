@@ -1,3 +1,5 @@
+** Under Development **
+
 # CFWheels plugin of oauth2
 
 A CFWheels plugin of the oauth2 library by Matt Gifford found here [oauth2 CFC](https://github.com/coldfumonkeh/oauth2)
@@ -26,7 +28,7 @@ set(oauth2=oauth2);
 Init your provider
 
 ```
-var auth = new oauth2_exampleProvider(get("oauth2.providers.exampleProvider"));
+var auth = new oauth2(get("oauth2.providers.exampleProvider"));
 ```
 
 Original README below:
