@@ -16,7 +16,7 @@ component displayname="auth0" extends="oauth2" accessors="true" {
 	**/
 	public auth0 function init(
 		required string client_id, 
-    required string client_secret,
+        required string client_secret,
 		required string authEndpoint, 
 		required string accessTokenEndpoint,
 		required string redirect_uri

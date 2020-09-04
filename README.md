@@ -2,6 +2,33 @@
 
 A CFWheels plugin of the oauth2 library by Matt Gifford found here [oauth2 CFC](https://github.com/coldfumonkeh/oauth2)
 
+## Example Usage
+
+Add provider settings in config/settings.cfm:
+
+```
+// Third Party provider settings
+oauth2 = {
+  "providers" = {
+    "exampleProvider" = {
+        "domain"="",
+        "client_id"="",
+        "client_secret"="",
+        "authEndpoint"="",
+        "accessTokenEndpoint"="",
+        "redirect_uri"=""
+    }
+  }
+};
+set(oauth2=oauth2);
+```
+
+Init your provider
+
+```
+var auth = new oauth2_exampleProvider(get("oauth2.providers.exampleProvider"));
+```
+
 Original README below:
 
 # oauth2
