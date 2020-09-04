@@ -13,7 +13,7 @@ Add provider settings in config/settings.cfm:
 oauth2 = {
   "providers" = {
     "exampleProvider" = {
-        "domain"="",
+        "provider"="",
         "client_id"="",
         "client_secret"="",
         "authEndpoint"="",
