@@ -1,4 +1,4 @@
-component accessors="true" {
+component {
 
   /**
    * Accept init parameters and return an oauth2 instance for a given provider
@@ -22,7 +22,7 @@ component accessors="true" {
 		required string redirect_uri
   ){
     var basePath = getDirectoryFromPath( getMetadata( this ).path ).replace( '\', '/', 'all' );
-    oauthProvider = new 'providers.#arguments.provider#'(arguments);
+    var oauthProvider = new 'providers.#arguments.provider#'(arguments);
     return oauthProvider;
   }
 
