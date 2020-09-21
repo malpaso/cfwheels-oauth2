@@ -1,5 +1,10 @@
 component {
 
+  public function init(){
+    this.version = "1.0";
+    return this;
+  }
+
   /**
    * Accept init parameters and return an oauth2 instance for a given provider
    *
@@ -13,7 +18,7 @@ component {
    * @accessTokenEndpoint The endpoint to use to get an access token
    * @redirect_uri The url for redirection afterwards
    */
-  public oauth2 function init(
+  public oauth2 function config(
     required string provider="oauth2",
     required string client_id, 
 		required string client_secret, 
